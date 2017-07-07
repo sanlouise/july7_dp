@@ -43,7 +43,7 @@ let film = {
 /*
 4. Add a property "boxoffice" with a value of 269061 to the "film" object. Return "film".
 */
-addBoxOffice = () =>{
+addBoxOffice = () => {
   film.boxoffice = 269061;
   return film;
 }
@@ -89,13 +89,11 @@ interleave = () =>{
 let first = [ "blink", "stand", "glasses", "chair", "numinous", "adjacent", "bracelet", "hand" ];
 let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close", "toe" ];
 
-union = () =>{
+union = () => {
     let same = [];
     for (let i = 0; i < first.length; i++) {
-      for (let v = 0; v < second.length; v++) {
-        if (first[i] == second[v]) {
-          same.push(first[i]);
-        }
+      if (first[i] == second[i]) {
+        same.push(first[i]);
       }
     }
     return same;

@@ -37,8 +37,8 @@ console.log( 03, arraysMatch( addNums_test, addNums_result ), addNums_test );
 /*
 4. Add a property "boxoffice" with a value of 269061 to the "film" object. Return "film".
 */
-let boxoffice_test = addBoxOffice() || {};
-let boxoffice_test_val = boxoffice_test.boxoffice;
+let boxoffice_test = addBoxOffice() || {}; //=> "film"
+let boxoffice_test_val = boxoffice_test.boxoffice; //=> "film.box"
 console.log( 04, boxoffice_test_val === 269061, boxoffice_test_val );
 
 /*
